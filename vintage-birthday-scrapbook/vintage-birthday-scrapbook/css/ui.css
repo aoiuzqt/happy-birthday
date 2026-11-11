@@ -1,0 +1,56 @@
+/* ============================================================
+   Controls, hint text and reduced-motion support
+   ============================================================ */
+
+.ui {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 6px;
+  color: var(--cream);
+  font-family: var(--hand);
+  font-size: 20px;
+}
+
+.ui button {
+  font: inherit;
+  color: var(--cream);
+  background: #5e3d2a;
+  border: 2px dashed var(--tan);
+  border-radius: 30px;
+  padding: 2px 20px;
+  cursor: pointer;
+  transition: transform .2s,background .2s;
+}
+
+.ui button:hover:not(:disabled) {
+  background: #7d583f;
+  transform: translateY(-2px);
+}
+
+.ui button:disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+.ui button:focus-visible,
+.hit:focus-visible {
+  outline: 3px solid var(--tan);
+  outline-offset: 3px;
+}
+
+.hint {
+  color: var(--tan);
+  font-family: var(--hand);
+  font-size: 16px;
+  margin-top: 2px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .leaf,
+  .book {
+    transition-duration: .01s;
+  }
+}

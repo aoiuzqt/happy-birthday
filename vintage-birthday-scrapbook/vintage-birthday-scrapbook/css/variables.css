@@ -1,0 +1,12 @@
+/* Design tokens: colours and font stacks */
+
+:root {
+  --esp: #2b1a12;
+  --tan: #c9a47e;
+  --cream: #f1e4c6;
+  --rose: #8e3b34;
+  --ink: #46291a;
+  --serif: 'IM Fell English',Georgia,serif;
+  --hand: 'Caveat','Segoe Print',cursive;
+  --script: 'Parisienne','Brush Script MT',cursive;
+}
