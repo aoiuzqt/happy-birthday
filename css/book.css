@@ -1,0 +1,133 @@
+/* ============================================================
+   Book structure: stage, leaves, pages, binding, clickable corners
+   ============================================================ */
+
+.stage {
+  width: 700px;
+  height: 490px;
+  flex: none;
+  perspective: 2600px;
+}
+
+.book {
+  position: relative;
+  width: 680px;
+  height: 470px;
+  margin: 10px;
+  transform-style: preserve-3d;
+  transition: transform 1.1s cubic-bezier(.65,.05,.3,1);
+}
+
+.book.start {
+  transform: translateX(-170px);
+}
+
+.book.end {
+  transform: translateX(170px);
+}
+.leaf {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 340px;
+  height: 470px;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  transition: transform 1.1s cubic-bezier(.65,.05,.3,1);
+}
+
+.leaf.flipped {
+  transform: rotateY(-180deg);
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  font-size: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.4);
+}
+
+.page.back {
+  transform: rotateY(180deg);
+}
+
+.R {
+  border-radius: 2px 8px 8px 2px;
+}
+
+.L {
+  border-radius: 8px 2px 2px 8px;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 26px;
+  z-index: 4;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom,transparent 0 11px,#cdc4b6 11px 15px,transparent 15px 26px),radial-gradient(circle at 13px 13px,#24150d 0 4px,transparent 5px) 0 0/26px 26px repeat-y;
+}
+
+.R::before {
+  left: 0;
+}
+
+.L::before {
+  right: 0;
+}
+
+.nb::before {
+  display: none;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.R::after {
+  left: 0;
+  background: linear-gradient(90deg,rgba(0,0,0,.3),transparent);
+}
+
+.L::after {
+  right: 0;
+  background: linear-gradient(270deg,rgba(0,0,0,.3),transparent);
+}
+
+.age {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center,transparent 55%,rgba(70,38,12,.38)),url("../assets/textures/paper-grain.svg");
+  mix-blend-mode: multiply;
+  opacity: .8;
+}
+
+.hit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 13%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.R .hit {
+  right: 0;
+}
+
+.L .hit {
+  left: 0;
+}

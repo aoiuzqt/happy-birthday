@@ -1,0 +1,177 @@
+/* ============================================================
+   Illustrations (WebP stickers in assets/images)
+   ============================================================ */
+
+.im {
+  position: absolute;
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.45));
+}
+
+.i-env {
+  background-image: url(../assets/images/env.webp);
+  aspect-ratio: 497/560;
+}
+
+.i-seal {
+  background-image: url(../assets/images/seal.webp);
+  aspect-ratio: 130/120;
+}
+
+.i-heart {
+  background-image: url(../assets/images/heart.webp);
+  aspect-ratio: 300/273;
+}
+
+.i-mon {
+  background-image: url(../assets/images/mon.webp);
+  aspect-ratio: 300/190;
+}
+
+.i-ribbon {
+  background-image: url(../assets/images/ribbon.webp);
+  aspect-ratio: 192/340;
+}
+
+.i-bow {
+  background-image: url(../assets/images/bow.webp);
+  aspect-ratio: 348/360;
+}
+
+.i-pin {
+  background-image: url(../assets/images/pin.webp);
+  aspect-ratio: 238/300;
+}
+
+.i-locket {
+  background-image: url(../assets/images/locket.webp);
+  aspect-ratio: 240/180;
+}
+
+.i-forever {
+  background-image: url(../assets/images/forever.webp);
+  aspect-ratio: 380/87;
+}
+
+.i-bridge {
+  background-image: url(../assets/images/bridge.webp);
+  aspect-ratio: 560/224;
+}
+
+.i-butter {
+  background-image: url(../assets/images/butter.webp);
+  aspect-ratio: 189/280;
+}
+
+.i-piano {
+  background-image: url(../assets/images/piano.webp);
+  aspect-ratio: 157/820;
+}
+
+.i-lace {
+  background-image: url(../assets/images/lace.webp);
+  aspect-ratio: 346/440;
+}
+
+.i-paper {
+  background-image: url(../assets/images/paper.webp);
+  aspect-ratio: 365/440;
+}
+
+.i-teddy {
+  background-image: url(../assets/images/teddy.webp);
+  aspect-ratio: 198/234;
+}
+
+.i-label {
+  background-image: url(../assets/images/label.webp);
+  aspect-ratio: 260/84;
+}
+
+.i-polas {
+  background-image: url(../assets/images/polas.webp);
+  aspect-ratio: 224/260;
+}
+
+.i-love {
+  background-image: url(../assets/images/love.webp);
+  aspect-ratio: 260/240;
+}
+
+.i-roses {
+  background-image: url(../assets/images/roses.webp);
+  aspect-ratio: 147/260;
+}
+
+.i-crumple {
+  background-image: url(../assets/images/crumple.webp);
+  aspect-ratio: 320/440;
+}
+
+.i-swan {
+  background-image: url(../assets/images/swan.webp);
+  aspect-ratio: 371/460;
+}
+
+.i-vinyl {
+  background-image: url(../assets/images/vinyl.webp);
+  aspect-ratio: 395/400;
+}
+
+.i-staff {
+  background-image: url(../assets/images/staff.webp);
+  aspect-ratio: 480/177;
+}
+
+.i-notes {
+  background-image: url(../assets/images/notes.webp);
+  aspect-ratio: 285/300;
+}
+
+.i-violin {
+  background-image: url(../assets/images/violin.webp);
+  aspect-ratio: 303/420;
+}
+
+.i-gramo {
+  background-image: url(../assets/images/gramo.webp);
+  aspect-ratio: 202/280;
+}
+
+.i-paint1 {
+  background-image: url(../assets/images/paint1.webp);
+  aspect-ratio: 480/403;
+}
+
+.i-paint2 {
+  background-image: url(../assets/images/paint2.webp);
+  aspect-ratio: 341/420;
+}
+
+.i-bouquet {
+  background-image: url(../assets/images/bouquet.webp);
+  aspect-ratio: 614/900;
+}
+
+.i-dried {
+  background-image: url(../assets/images/dried.webp);
+  aspect-ratio: 182/320;
+}
+
+.i-cham {
+  background-image: url(../assets/images/cham.webp);
+  aspect-ratio: 127/300;
+}
+
+.i-daisy {
+  background-image: url(../assets/images/daisy.webp);
+  aspect-ratio: 208/320;
+}
+
+.i-redr {
+  background-image: url(../assets/images/redr.webp);
+  aspect-ratio: 159/300;
+}

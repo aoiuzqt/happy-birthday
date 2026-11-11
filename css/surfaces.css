@@ -1,0 +1,41 @@
+/* ============================================================
+   Page surfaces: linen, paper, polka dots, plaid, lined paper
+   ============================================================ */
+
+.linen {
+  background: repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.1) 0 1px,transparent 1px 3px),#5e3d2a;
+  color: var(--cream);
+}
+
+.paper {
+  background: repeating-linear-gradient(0deg,rgba(120,80,40,.1) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(120,80,40,.1) 0 1px,transparent 1px 22px),#ecdcb9;
+}
+
+.dots {
+  background: radial-gradient(circle,#ecdcb9 0 6px,transparent 7px) 0 0/40px 40px,radial-gradient(circle,#ecdcb9 0 6px,transparent 7px) 20px 20px/40px 40px,#4a2d1e;
+  color: var(--cream);
+}
+
+.plaid {
+  background: repeating-linear-gradient(0deg,rgba(255,235,200,.18) 0 14px,transparent 14px 28px),repeating-linear-gradient(90deg,rgba(40,20,10,.3) 0 14px,transparent 14px 28px),#7d583f;
+}
+
+.clear-page {
+  background-image: none;
+  background-color: #7d583f;
+}
+
+.clear-page .age {
+  display: none;
+}
+
+.clear-page .note {
+  background: #f0e0bd;
+  color: #2f2118;
+  -webkit-mask: none;
+  mask: none;
+}
+
+.lines {
+  background: repeating-linear-gradient(to bottom,transparent 0 25px,rgba(90,70,50,.28) 25px 26px),#efe0bf;
+}

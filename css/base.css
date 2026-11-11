@@ -1,0 +1,29 @@
+/* Reset, page background and safe-area handling */
+
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top,0px);
+  padding-bottom: env(safe-area-inset-bottom,0px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  scroll-padding-top: env(safe-area-inset-top,0px);
+}
+
+body {
+  height: 100%;
+  background: repeating-linear-gradient(0deg,rgba(241,228,198,.05) 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,rgba(241,228,198,.05) 0 1px,transparent 1px 40px),radial-gradient(ellipse at center,#4a2f20,var(--esp));
+  font-family: var(--serif);
+  color: var(--ink);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

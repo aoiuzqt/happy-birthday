@@ -1,0 +1,70 @@
+/* ============================================================
+   Scrapbook pieces: photos, polaroids, film strips, notes, stars, tape, hearts
+   ============================================================ */
+
+.photo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(.35) sepia(.22) contrast(1.05) saturate(.9);
+  position: relative;
+}
+
+.pol {
+  position: absolute;
+  background: #f6efdc;
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.pol .photo {
+  position: absolute;
+  inset: 7px 7px 28px;
+}
+
+.big {
+  position: absolute;
+  font-style: italic;
+  font-size: 27px;
+  letter-spacing: .04em;
+  color: var(--cream);
+}
+
+.film {
+  position: absolute;
+  background: #241710;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.45);
+}
+
+.note {
+  position: absolute;
+  background: #f0e0bd;
+  box-shadow: 0 3px 9px rgba(0,0,0,.45);
+  padding: 20px 18px;
+  -webkit-mask: radial-gradient(circle 5px at 5px 5px,transparent 98%,#000) -5px -5px/10px 10px;
+  mask: radial-gradient(circle 5px at 5px 5px,transparent 98%,#000) -5px -5px/10px 10px;
+}
+
+.star {
+  position: absolute;
+  background: #bf9a74;
+  clip-path: polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+}
+
+.tape {
+  position: absolute;
+  width: 64px;
+  height: 20px;
+  background: rgba(215,185,140,.8);
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  z-index: 2;
+}
+
+.heart {
+  position: absolute;
+  color: var(--rose);
+  font-size: 18px;
+}

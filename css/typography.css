@@ -1,0 +1,33 @@
+/* ============================================================
+   Typography and editable text
+   ============================================================ */
+
+.abs {
+  position: absolute;
+}
+
+h2 {
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.hand {
+  font-family: var(--hand);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.script {
+  font-family: var(--script);
+}
+
+[contenteditable] {
+  outline: none;
+  border-bottom: 1px dashed transparent;
+}
+
+[contenteditable]:hover,
+[contenteditable]:focus {
+  border-bottom-color: currentColor;
+}
